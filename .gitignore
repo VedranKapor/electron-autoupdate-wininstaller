@@ -1,2 +1,7 @@
 node_modules
 release/package
+build.js
+index.html
+main.js
+package.json
+package-lock.json
