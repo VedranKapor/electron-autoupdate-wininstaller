@@ -1,0 +1,32 @@
+{
+  "name": "eau",
+  "version": "1.0.0",
+  "description": "demo wininstaller autoupdate",
+  "main": "main.js",
+  "scripts": {
+    "start": "SET NODE_ENV=dev & electron .",
+    "package-win": "./node_modules/.bin/electron-packager . EAU --platform=win32 --arch=x64 --out=release/package ",
+    "win-installer": "node ./build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VedranKapor/electron-autoupdate-wininstaller.git"
+  },
+  "keywords": [
+    "electron",
+    "wininstaller",
+    "autupdate"
+  ],
+  "author": "vk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VedranKapor/electron-autoupdate-wininstaller/issues"
+  },
+  "homepage": "https://github.com/VedranKapor/electron-autoupdate-wininstaller#readme",
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-packager": "^14.2.1",
+    "electron-winstaller": "^4.0.0"
+  }
+}
